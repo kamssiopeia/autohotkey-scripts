@@ -3,6 +3,8 @@
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
+#NoTrayIcon
+
 <#\::
  WinGetTitle, ActiveWindowTitle, A ; Get the active window's title for "targetting" it/acting on it.
  WinGetPos,,, Width, Height, %ActiveWindowTitle% ; Get the active window's position, used for our calculations.
